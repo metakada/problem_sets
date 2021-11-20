@@ -197,7 +197,7 @@ rating_hyp_long_d = rating_hyp_long_d %>%
     Emotion = str_extract(Measurement, "Angry|Neutral|Excited|Exciting|Calm"),
     Emotion = ifelse(Emotion == "Excited", "Exciting", # this just gets rid of some annoying labeling choices
               ifelse(Emotion == "Calm", "Neutral", Emotion))
-    ) 
+    )
 ```
 
 # Groups, Summaries, and Results
